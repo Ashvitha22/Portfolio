@@ -33,38 +33,26 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-[#121212] border-b border-gray-700">
-      <div className="container mx-auto px-4 py-3 flex items-center">
-        {/* Logo on the left */}
-        <div className="text-white text-2xl font-bold">👨‍💻</div>
-
-        {/* Nav items on the right */}
-        <div className="ml-auto flex items-center space-x-6">
-          <ul className="flex space-x-6 text-sm font-medium">
-            {navItems.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className={`transition ${
-                    activeSection === item.toLowerCase()
-                      ? "text-red-500"
-                      : "text-white hover:text-red-500"
-                  }`}
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          {/* Dark Mode toggle */}
-          <button
-            className="text-white text-xl hover:text-yellow-400 transition"
-            title="Toggle Theme"
-            onClick={() => alert("Dark/light mode toggle coming soon!")}
-          >
-            🌙
-          </button>
-        </div>
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      
+        <ul className="flex space-x-6 text-sm font-medium">
+          {navItems.map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className={`transition ${
+                  activeSection === item.toLowerCase()
+                    ? "text-red-500"
+                    : "text-white hover:text-red-500"
+                }`}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+        
+        
       </div>
     </nav>
   );

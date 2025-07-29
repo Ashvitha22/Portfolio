@@ -1,17 +1,17 @@
-// App.jsx
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume"
+import Resume from "./pages/Resume";
 
 export default function App() {
+  
   return (
-    <div className="bg-black text-white font-sans scroll-smooth">
-      <Navbar />
+    <div className="bg-white text-black dark:bg-black dark:text-white font-sans scroll-smooth transition-all duration-300">
+      <Navbar  />
       <main>
         <section id="home">
           <Home />
@@ -31,8 +31,6 @@ export default function App() {
         <section id="resume">
           <Resume />
         </section>
-        
- 
       </main>
     </div>
   );
