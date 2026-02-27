@@ -8,11 +8,9 @@ app.use(express.json());
 // Basic route
 
 app.get('/', (req, res) => {
-  res.send('Backend is working!');
+  res.send('Backend is working!!!');
 });
-app.get('/', (req, res) => {
-  res.send('Backend is working!');
-});
+
 
 // Test POST route
 app.post('/test', (req, res) => {

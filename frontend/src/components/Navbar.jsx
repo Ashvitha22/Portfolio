@@ -33,8 +33,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-[#121212] border-b border-gray-700">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-      
+      <div className="container mx-auto px-4 py-3 flex justify-end items-center">
+
         <ul className="flex space-x-6 text-sm font-medium">
           {navItems.map((item) => (
             <li key={item}>
