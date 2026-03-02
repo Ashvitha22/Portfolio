@@ -18,7 +18,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio built with React and Tailwind CSS. Includes routing, resume, contact form, and live project showcase.",
-    link: "#",
+    link: "https://github.com/Ashvitha22/Portfolio",
   },
   {
     title: "Number Guessing Game",
@@ -26,6 +26,18 @@ const projects = [
       "A fun Java console game where users guess a random number. Features replay, scoring, and input validation.",
     link: "https://github.com/Ashvitha22/codesoft-java/tree/masters/numberguessinggame",
   },
+   {
+    title: "Learnhub platform",
+    description:
+      "LearHub is an online learning platform that allows users to register, log in, and access structured educational courses and resources.It provides a user-friendly dashboard to track learning progress and ensures a smooth, interactive learning experience.",
+    link: "https://github.com/Ashvitha22/LearnHub-Project",
+  },
+  {
+    title: "Daily expenses tracker",
+    description:
+      "Daily Expenses Tracker is a web app that helps users record and monitor their daily income and expenses.It provides simple tracking and summaries to manage spending effectively.",
+    link: "https://github.com/Ashvitha22/LearnHub-Project",
+  }
 ];
 
 const Projects = () => {
